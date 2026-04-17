@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="600">
+        Title="Introducion to WPF" Height="450" Width="600" FontSize="64">
 	<Window.Resources>
 		<Style x:Key="OnOffToggleStyle" TargetType="ToggleButton">
 			<Style.Triggers>
@@ -54,9 +54,18 @@
 	</Window.Resources>
 
 	<Grid x:Name="BaseForm">
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition/>
-		</Grid.ColumnDefinitions>
-		<ToggleButton Template="{DynamicResource ToggleButtonTemplate1}" Style="{StaticResource OnOffToggleStyle}" HorizontalAlignment="Left" Margin="199,136,0,0" VerticalAlignment="Top" Width="239" Height="100" FontSize="36" RenderTransformOrigin="0.5,0.5" IsChecked="True" Foreground="White"/>
+		
+		<!--<ToggleButton Template="{DynamicResource ToggleButtonTemplate1}" 
+					  Style="{StaticResource OnOffToggleStyle}" 
+					  HorizontalAlignment="Left" 
+					  Margin="199,136,0,0" 
+					  VerticalAlignment="Top" 
+					  Width="239" Height="100" 
+					  FontSize="36" 
+					  RenderTransformOrigin="0.5,0.5" 
+					  IsChecked="True" 
+					  Foreground="White"/>-->
+		<!--<Button Click="btnStart_Click">Кнопка</Button>-->
+		<Button Click="btnStart_Click" Content="Click"/>
 	</Grid>
 </Window>

@@ -22,15 +22,19 @@ namespace WPF
 	/// 
 	public partial class MainWindow : Window
 	{
-	string str = "Start";
 		public MainWindow()
 		{
 			InitializeComponent();
 		}
-
 		private void btnStart_Click(object sender, RoutedEventArgs e)
 		{
 			//btnStart.Content = btnStart.Content=="Start"?"STOP":"Start";
+			(sender as Button).Content = (sender as Button).Content == "Start" ? "STOP" : "Start";
+		}
+
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+
 		}
 	}
 }
